@@ -3,6 +3,7 @@ Adobe-Export-Scripts
 
 Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
 
+License: [MIT][1]
 Blame: Chris DeLuca & Sean Orelli
 
 Installation
@@ -12,3 +13,5 @@ Installation
     * *Win:* 'C:\Program Files\Adobe\Adobe Illustrator CS#\Presets\en\_US\Scripts\'
 2.  Restart Illustrator or Photoshop
 3.  Choose `File > Scripts > [Name of Script]`
+
+[1]:http://www.opensource.org/licenses/MIT
