@@ -3,7 +3,7 @@ Adobe-Export-Scripts
 
 Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
 
-License: [MIT][1]
+License: [MIT][1]  
 Blame: Chris DeLuca & Sean Orelli
 
 Installation
