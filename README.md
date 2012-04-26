@@ -1,7 +1,9 @@
 Adobe-Export-Scripts
 ====================
 
-Photoshop and Illustrator scripts
+Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
+
+Blame: Chris DeLuca & Sean Orelli
 
 Installation
 --------------------
