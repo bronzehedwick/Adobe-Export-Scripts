@@ -7,8 +7,8 @@ Blame: Chris DeLuca & Sean Orelli
 Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
 
 There are two Illustrator scripts:  
-1.  Export PNGs from groups
-2.  Export layout coordinates 
+* Export PNGs from groups
+* Export layout coordinates
 
 The PNG export differs from other export scripts I have found in that it exports groups only, instead of all elements. This way you can group all the PNGs you want exported. The script will only use the top level group (so it won't export nested groups) and trims the PNG with as little white space as possible.
 
