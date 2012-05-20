@@ -1,12 +1,13 @@
 Adobe-Export-Scripts
 ====================
-
+###
 License: [MIT][1]  
 Blame: Chris DeLuca & Sean Orelli
+###
 
 Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
 
-There are two Illustrator scripts:  
+There are two Illustrator scripts:
 * Export PNGs from groups
 * Export layout coordinates
 
