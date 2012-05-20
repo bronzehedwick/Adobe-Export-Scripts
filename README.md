@@ -6,7 +6,7 @@ Blame: Chris DeLuca & Sean Orelli
 
 Photoshop and Illustrator scripts. These scripts have been tested with Illustrator CS4/5 and Photoshop CS5.
 
-There are two Illustrator scripts:
+There are two Illustrator scripts:  
 1.  Export PNGs from groups
 2.  Export layout coordinates 
 
