@@ -97,7 +97,7 @@ writeFile(coords);
 
 // Show results
 if ( FPath == null ) {
-  alert ("Export aborted", "Canceled");
+  alert("Export aborted", "Canceled");
 }
 else {
   alert("Exported " + layerNum + " layer's coordinates to " + FPath + "/" + docName + ".txt " + "using " + fileLineFeed + " line feeds.", "Success!");
