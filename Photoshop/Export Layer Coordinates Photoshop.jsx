@@ -6,7 +6,7 @@
 // Company: Playmatics
 // ===============================================================================
 // Installation:
-// 1. Place script in 
+// 1. Place script in
 //        Mac: '~/Applications/Adobe Photoshop CS#/Presets/Scripts/'
 //        Win: 'C:\Program Files\Adobe\Adobe Photoshop CS#\Presets\Scripts\'
 // 2. Restart Photoshop
@@ -14,7 +14,7 @@
 // ===============================================================================
 
 // Enables double-click launching from the Mac Finder or Windows Explorer
-#target photoshop 
+#target photoshop
 
 // Bring application forward
 app.bringToFront();
@@ -39,55 +39,55 @@ var y = layerRef.bounds[1].value;
 var coords = "";
 
 // Loop to iterate through all layers
-function recurseLayers(currLayers)
-{
-   for(var i = 0; i < currLayers.layers.length; i++)
-   {
-      layerRef = currLayers.layers[i];
-      x = layerRef.bounds[0].value;
-      y = layerRef.bounds[1].value;
-      coords += layerRef.name + "," + x + "," + y + "\n";
-         
-      //test if it's a layer set
-      if(isLayerSet(currLayers.layers[i]))
-      {
-         recurseLayers(currLayers.layers[i]);
-      }
-   }
+function recurseLayers(currLayers) {
+  for ( var i = 0; i < currLayers.layers.length; i++ ) {
+    layerRef = currLayers.layers[i];
+    x = layerRef.bounds[0].value;
+    y = layerRef.bounds[1].value;
+    coords += layerRef.name + "," + x + "," + y + "\n";
+
+    //test if it's a layer set
+    if ( isLayerSet(currLayers.layers[i]) ) {
+      recurseLayers(currLayers.layers[i]);
+    }
+  }
 }
 
 //a test for a layer set
-function isLayerSet(layer)
-{
-   try{
-      if(layer.layers.length > 0)
-         return true;}
-      
-   catch(err){
-      return false;}
+function isLayerSet(layer) {
+  try {
+    if ( layer.layers.length > 0 ) {
+      return true;
+    }
+  }
+
+  catch(err) {
+    return false;
+  }
 }
 
 // Ask the user for the folder to export to
-var FPath = Folder.selectDialog("Save exported coordinates to") ;
+var FPath = Folder.selectDialog("Save exported coordinates to");
 
 // Detect line feed type
-if ($.os.search(/windows/i) != -1) {
-    fileLineFeed = "Windows"
-} else {
-    fileLineFeed = "Macintosh"
+if ( $.os.search(/windows/i) !== -1 ) {
+  fileLineFeed = "Windows";
+}
+else {
+  fileLineFeed = "Macintosh";
 }
 
 // Export to txt file
 function writeFile(info) {
-     try     {
-          var f = new File(FPath + "/" + docName + ".txt");
-          f.remove();
-          f.open('a');
-          f.lineFeed = fileLineFeed;
-          f.write(info);
-          f.close()
-          }
-     catch(e){}
+  try {
+    var f = new File(FPath + "/" + docName + ".txt");
+    f.remove();
+    f.open('a');
+    f.lineFeed = fileLineFeed;
+    f.write(info);
+    f.close();
+  }
+  catch(e){}
 }
 
 // Run the functions
@@ -97,7 +97,9 @@ writeFile(coords);
 
 // Show results
 if ( FPath == null ) {
-        alert ("Export aborted", "Canceled");
-} else {
-    alert("Exported " + layerNum + " layer's coordinates to " + FPath + "/" + docName + ".txt " + "using " + fileLineFeed + " line feeds.", "Success!");
+  alert ("Export aborted", "Canceled");
 }
+else {
+  alert("Exported " + layerNum + " layer's coordinates to " + FPath + "/" + docName + ".txt " + "using " + fileLineFeed + " line feeds.", "Success!");
+}
+

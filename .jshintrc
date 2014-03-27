@@ -6,7 +6,7 @@
     "devel": false,
     "eqeqeq": true,
     "eqnull": true,
-    "evil": false,
+    "evil": true,
     "forin": false,
     "immed": false,
     "laxbreak": false,
@@ -19,5 +19,13 @@
     "regexp": false,
     "undef": true,
     "sub": false,
-    "strict": false
+    "strict": false,
+    "predef": [
+      "app",
+      "SaveOptions",
+      "Folder",
+      "alert",
+      "preferences",
+      "fileLineFeed"
+    ]
 }
