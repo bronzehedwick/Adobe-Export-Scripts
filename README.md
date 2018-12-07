@@ -11,7 +11,7 @@ There are two Illustrator scripts:
 * Export PNGs from groups
 * Export layout coordinates
 
-![Illustrator script code screenshot](http://hypnotictoast.com/images/illustraitor_scripts_screenshot.png)
+![Illustrator script code screenshot](https://raw.githubusercontent.com/bronzehedwick/Adobe-Export-Scripts/master/screenshot.png)
 
 The PNG export differs from other export scripts I have found in that it exports groups only, instead of all elements. This way you can group all the PNGs you want exported. The script will only use the top level group (so it won't export nested groups) and trims the PNG with as little white space as possible.
 
@@ -22,8 +22,8 @@ The Photoshop script is very young, and needs an overhaul to compete with the Il
 Installation
 --------------------
 1.  Copy script to
-    * *Mac:* '~/Applications/Adobe Illustrator CS#/Presets/en\_US/Scripts/'
-    * *Win:* 'C:\Program Files\Adobe\Adobe Illustrator CS#\Presets\en\_US\Scripts\'
+    - **Mac:** `~/Applications/Adobe Illustrator CS#/Presets/en\_US/Scripts/`
+    - **Win:** `C:\Program Files\Adobe\Adobe Illustrator CS#\Presets\en\_US\Scripts\`
 2.  Restart Illustrator or Photoshop
 3.  Choose `File > Scripts > [Name of Script]`
 
